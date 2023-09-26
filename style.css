@@ -1,0 +1,19 @@
+nav a{
+    float: left;
+    padding: 15px;
+    /*background-color: aqua;*/
+}
+
+nav a:hover{
+    background-color: red;
+}
+
+div{
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+h1{
+    background-color: yellow;
+}
