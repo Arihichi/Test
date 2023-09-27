@@ -1,10 +1,89 @@
-nav a{
+/* Reset some default styles */
+body, nav, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Style the navbar */
+.navbar {
+    background-color: blue; /* Background color */
+    overflow: hidden; /* Hide overflowing content */
+    display: flex; /*For mobil-first, use flexbox*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar h1 {
+    color: white;
+    margin: 0;
+}
+
+.menu-toggle {
+    display: block;
+    font-size: 20px;
+    color: white;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-links li {
+    /*height: 20px;
+    margin: 0px;*/
+    display: flex;
+    padding: 5px 10px;
+    text-align: center;
+    color: red;
+}
+
+.nav-links li:hover {
+    background-color: aqua;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+ 
+
+/* Mobil first */
+@media screen and (min-width: 768px) {
+    .navbar {
+        padding: 10px 20px; /* Increase padding for larger screens */
+    }
+
+    .menu-toggle {
+        display: none; /* Hide the menu toggle on larger screens */
+    }
+
+    .nav-links {
+        display: flex; /* Use flexbox to display links horizontally */
+    }
+
+    .nav-links li {
+        padding: 0 15px; /* Add spacing between links */
+    }
+}
+
+
+
+
+
+
+/*nav a{
     float: left;
     padding: 15px;
     /*background-color: aqua;*/
-}
 
-nav a:hover{
+
+/*nav a:hover{
     background-color: red;
 }
 
